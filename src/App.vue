@@ -1,15 +1,23 @@
 <template>
   <div id="app">
-    <router-view/>
+    <router-view />
   </div>
 </template>
 
-<style lang="scss">
-html, body, #app {
+<script>
+export default {
+  name: 'app',
+  components: {}
+}
+</script>
+
+<style>
+html,
+body,
+#app {
   height: 100%;
   width: 100%;
-  box-sizing: border-box;
-  padding: 0;
   margin: 0;
+  padding: 0;
 }
 </style>
