@@ -28,10 +28,10 @@ export default {
     const chart = this.$echarts.init(chartDom, '', { renderer: 'svg' })
     chart.setOption({
       color: ['#3398DB'],
+      tooltip: { trigger: 'axis' },
       xAxis: {
         type: 'category',
         show: false,
-        boundaryGap: false,
         data: [
           '00:00',
           '01:00',
@@ -54,6 +54,7 @@ export default {
       },
       series: [
         {
+          name: '用户实时交易量',
           type: 'bar',
           data: [
             410,
