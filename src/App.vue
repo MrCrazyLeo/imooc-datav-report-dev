@@ -19,6 +19,8 @@ body,
   width: 100%;
   margin: 0;
   padding: 0;
-  font-family: Microsoft YaHei, Arial, Helvetica, sans-serif;
+  font-family: 'PingFang SC Regular', 'Microsoft YaHei', Arial, Helvetica,
+    sans-serif;
+  background-color: #eee;
 }
 </style>
