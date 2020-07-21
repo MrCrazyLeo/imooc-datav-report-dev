@@ -1,16 +1,24 @@
 <template>
   <div class="common-card">
-    <div class="title">1</div>
-    <div class="value">2</div>
-    <div class="chart">3</div>
+    <div class="title">{{ title }}</div>
+    <div class="value">{{ value }}</div>
+    <div class="chart">
+      <slot></slot>
+    </div>
     <div class="line" />
-    <div class="total">5</div>
+    <div class="total">
+      <slot name="footer"></slot>
+    </div>
   </div>
 </template>
 
 <script>
 export default {
-  name: 'CommonCard'
+  name: 'CommonCard',
+  props: {
+    title: String,
+    value: String
+  }
 }
 </script>
 

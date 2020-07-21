@@ -1,4 +1,4 @@
-import CommonCard from '../../components/CommonCard/index'
+import CommonCard from '@/components/CommonCard/index'
 
 export default {
   components: {
