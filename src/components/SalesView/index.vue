@@ -1,6 +1,10 @@
 <template>
-  <div>
-    1111
+  <div class="sales-view">
+    <el-card shadow="hover">
+      <template v-slot:header>
+        <div>111222</div>
+      </template>
+    </el-card>
   </div>
 </template>
 
@@ -17,7 +21,7 @@ export default {
         series: [
           {
             type: 'line',
-            data: [100, 200, 300]
+            data: [100, 200, 300, 400]
           }
         ]
       }
@@ -27,4 +31,7 @@ export default {
 </script>
 
 <style lang='scss' scoped>
+.sales-view {
+  margin-top: 20px;
+}
 </style>

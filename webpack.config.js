@@ -10,7 +10,8 @@ module.exports = {
   },
   devServer: {
     historyApiFallback: true, // historyApiFallback设置为true那么所有的路径都执行index.html。
-    overlay: true // 将错误显示在html之上
+    overlay: true, // 将错误显示在html之上
+    disableHostCheck: true // webpack4.0 开启热更新
   },
   resolve: {
     alias: {
