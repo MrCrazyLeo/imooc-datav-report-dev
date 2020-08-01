@@ -1,10 +1,28 @@
 <template>
-  <div>Sale</div>
+  <div>
+    1111
+  </div>
 </template>
 
 <script>
 export default {
-  name: 'SalesView'
+  name: 'SalesView',
+  data() {
+    return {
+      data: {
+        xAxis: {
+          type: 'category'
+        },
+        yAxis: {},
+        series: [
+          {
+            type: 'line',
+            data: [100, 200, 300]
+          }
+        ]
+      }
+    }
+  }
 }
 </script>
 
