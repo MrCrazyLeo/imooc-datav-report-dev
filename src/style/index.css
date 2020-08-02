@@ -7,3 +7,21 @@
   border-bottom: none;
   padding: 0;
 }
+
+.flex {
+  display: flex;
+}
+
+.flex-ws {
+  display: flex;
+  justify-content: center;
+}
+
+.flex-hc {
+  display: flex;
+  align-items: center;
+}
+
+.flex-1 {
+  flex: 1
+}
