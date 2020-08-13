@@ -4,6 +4,7 @@
     <sales-view />
     <bottom-view />
     <map-view />
+    <kss />
   </div>
 </template>
 
@@ -12,6 +13,7 @@ import TopView from '@/components/TopView'
 import BottomView from '@/components/BottomView'
 import SalesView from '@/components/SalesView'
 import MapView from '@/components/MapView'
+import Kss from '@/components/Kss'
 
 export default {
   name: 'Home',
@@ -19,8 +21,9 @@ export default {
     TopView,
     BottomView,
     SalesView,
-    MapView
-  }
+    MapView,
+    Kss,
+  },
 }
 </script>
 

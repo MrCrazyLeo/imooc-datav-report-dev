@@ -79,7 +79,7 @@ export default {
               const start = new Date()
               start.setTime(start.getTime() - 3600 * 1000 * 24 * 7)
               picker.$emit('pick', [start, end])
-            }
+            },
           },
           {
             text: '最近一个月',
@@ -88,7 +88,7 @@ export default {
               const start = new Date()
               start.setTime(start.getTime() - 3600 * 1000 * 24 * 90)
               picker.$emit('pick', [start, end])
-            }
+            },
           },
           {
             text: '最近三个月',
@@ -97,19 +97,26 @@ export default {
               const start = new Date()
               start.setTime(start.getTime() - 3600 * 1000 * 24 * 90)
               picker.$emit('pick', [start, end])
-            }
-          }
-        ]
+            },
+          },
+        ],
       },
       chartOptions: {
         title: {
           text: '年度销售额',
           textStyle: {
             color: '#666',
-            fontSize: 12
+            fontSize: 12,
           },
           left: 25,
-          top: 20
+          top: 20,
+        },
+        tooltip: {
+          show: true,
+          trigger: 'axis',
+          axisPointer: {
+            type: 'none',
+          },
         },
         xAxis: {
           type: 'category',
@@ -125,75 +132,75 @@ export default {
             '9月',
             '10月',
             '11月',
-            '12月'
+            '12月',
           ],
           axisTick: {
             alignWithLabel: true,
             lineStyle: {
-              color: '#999'
-            }
+              color: '#999',
+            },
           },
           axisLine: {
             lineStyle: {
-              color: '#999'
-            }
+              color: '#999',
+            },
           },
           axisLabel: {
-            color: '#333'
-          }
+            color: '#333',
+          },
         },
         yAxis: {
           axisLine: {
-            show: false
+            show: false,
           },
           axisTick: {
-            show: false
+            show: false,
           },
           splitLine: {
             lineStyle: {
               type: 'dotted',
-              color: '#eee'
-            }
-          }
+              color: '#eee',
+            },
+          },
         },
         series: [
           {
             type: 'bar',
             barWidth: '35%',
             data: [200, 250, 300, 350, 250, 200, 300, 350, 300, 250, 230, 450],
-            color: ['#3398DB']
-          }
+            color: ['#3398DB'],
+          },
         ],
 
         grid: {
           top: 70,
           left: 60,
           right: 60,
-          bottom: 50
-        }
+          bottom: 50,
+        },
       },
       rankDataList: [
         {
           no: 1,
           name: '麦当劳',
-          money: 5252365.6
+          money: 5252365.6,
         },
         {
           no: 2,
           name: '肯德基',
-          money: 52365.6
+          money: 52365.6,
         },
         {
           no: 3,
           name: '汉堡王',
-          money: 52525.6
+          money: 52525.6,
         },
         {
           no: 4,
           name: '华莱士',
-          money: 111165.6
-        }
-      ]
+          money: 111165.6,
+        },
+      ],
     }
   },
   methods: {
@@ -203,8 +210,8 @@ export default {
     },
     getOptions() {
       console.log(22222)
-    }
-  }
+    },
+  },
 }
 </script>
 
