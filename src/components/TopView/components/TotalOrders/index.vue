@@ -4,7 +4,10 @@
     value="2,306,390"
   >
     <template>
-      <v-chart :options="getOptions()" />
+      <v-chart
+        :options="getOptions()"
+        :autoresize='true'
+      />
     </template>
     <template v-slot:footer>
       <span>昨日订单量</span>
@@ -25,10 +28,10 @@ export default {
         xAxis: {
           type: 'category',
           show: false,
-          boundaryGap: false
+          boundaryGap: false,
         },
         yAxis: {
-          show: false
+          show: false,
         },
         series: [
           {
@@ -48,29 +51,29 @@ export default {
               690,
               530,
               220,
-              620
+              620,
             ],
             smooth: true,
             areaStyle: {
-              color: 'purple'
+              color: 'purple',
             },
             lineStyle: {
-              width: 0
+              width: 0,
             },
             itemStyle: {
-              opacity: 0
-            }
-          }
+              opacity: 0,
+            },
+          },
         ],
         grid: {
           top: 0,
           bottom: 0,
           right: 0,
-          left: 0
-        }
+          left: 0,
+        },
       }
-    }
-  }
+    },
+  },
 }
 </script>
 

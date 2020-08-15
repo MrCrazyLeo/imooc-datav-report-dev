@@ -4,7 +4,10 @@
     value="1,800,932"
   >
     <template>
-      <v-chart :options="getOptions()" />
+      <v-chart
+        :options="getOptions()"
+        :autoresize='true'
+      />
     </template>
     <template v-slot:footer>
       <div class="total-users-footer">
@@ -32,11 +35,11 @@ export default {
         xAxis: {
           type: 'value',
           show: false,
-          boundaryGap: false
+          boundaryGap: false,
         },
         yAxis: {
           type: 'category',
-          show: false
+          show: false,
         },
         series: [
           {
@@ -45,8 +48,8 @@ export default {
             stack: '总量',
             barWidth: 10,
             itemStyle: {
-              color: '#45c946'
-            }
+              color: '#45c946',
+            },
           },
           {
             type: 'bar',
@@ -54,8 +57,8 @@ export default {
             data: [200],
             barWidth: 10,
             itemStyle: {
-              color: '#ccc'
-            }
+              color: '#ccc',
+            },
           },
           {
             type: 'custom',
@@ -77,11 +80,11 @@ export default {
                       y: 10,
                       width: 12,
                       height: 10,
-                      layout: 'cover'
+                      layout: 'cover',
                     },
                     style: {
-                      fill: '#45c946'
-                    }
+                      fill: '#45c946',
+                    },
                   },
                   {
                     type: 'path',
@@ -92,26 +95,26 @@ export default {
                       y: -20,
                       width: 12,
                       height: 10,
-                      layout: 'cover'
+                      layout: 'cover',
                     },
                     style: {
-                      fill: '#45c946'
-                    }
-                  }
-                ]
+                      fill: '#45c946',
+                    },
+                  },
+                ],
               }
-            }
-          }
+            },
+          },
         ],
         grid: {
           top: 0,
           bottom: 0,
           right: 0,
-          left: 0
-        }
+          left: 0,
+        },
       }
-    }
-  }
+    },
+  },
 }
 </script>
 

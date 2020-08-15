@@ -4,7 +4,10 @@
     value="148,078"
   >
     <template>
-      <v-chart :options="getOptions()" />
+      <v-chart
+        :options="getOptions()"
+        :autoresize='true'
+      />
     </template>
     <template v-slot:footer>
       <span>退货率</span>
@@ -16,13 +19,14 @@
 
 <script>
 import commonCardMixin from '@/utils/mixins/commonCardMixin'
+import resize from '@/utils/mixins/resize'
 export default {
   name: 'TodayUsers',
-  mixins: [commonCardMixin],
+  mixins: [commonCardMixin, resize],
   components: {},
   data() {
     return {
-      chart: null
+      chart: null,
     }
   },
   mounted() {},
@@ -48,11 +52,11 @@ export default {
             '10:00',
             '11:00',
             '12:00',
-            '13:00'
-          ]
+            '13:00',
+          ],
         },
         yAxis: {
-          show: false
+          show: false,
         },
         series: [
           {
@@ -72,20 +76,20 @@ export default {
               134,
               290,
               330,
-              150
+              150,
             ],
-            barWidth: '60%'
-          }
+            barWidth: '60%',
+          },
         ],
         grid: {
           top: 0,
           bottom: 0,
           right: 0,
-          left: 0
-        }
+          left: 0,
+        },
       }
-    }
-  }
+    },
+  },
 }
 </script>
 

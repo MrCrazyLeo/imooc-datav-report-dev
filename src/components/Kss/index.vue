@@ -10,7 +10,7 @@
       src=''
     />
   </div>
-</template>A
+</template>
 
 <script>
 import Kss from '@/utils/kss/kss'
@@ -33,6 +33,9 @@ export default {
           this.imgSrc = e
           document.getElementById('image-container').src = this.imgSrc
         },
+        cancelCB() {
+          console.log('取消截图')
+        },
       })
     },
   },
@@ -54,7 +57,7 @@ export default {
 }
 #image-container {
   margin-top: 10px;
-  border: 1px dashed lightpink;
+  border: 1px dashedA lightpink;
   border-radius: 5px;
 }
 </style>
