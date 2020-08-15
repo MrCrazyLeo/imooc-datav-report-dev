@@ -1,6 +1,6 @@
 /*eslint-disable */
 // import {a} from './toolbar.js'
-import html2canvas from './html2canvas.min.js'
+import html2canvas from 'html2canvas'
 import { css, remove, domType, addClass, typeChecking } from './util'
 import createDragDom from './createDragDom.js'
 import createToolbar from './toolbar/toolbar.js'
@@ -321,7 +321,7 @@ let kss = (function () {
             return
         }
         that.isScreenshot = true
-        html2canvas(document.body, { useCORS: true, scrollY: 200 })
+        html2canvas(document.body, { useCORS: true, scrollY: 0 })
             .then((canvas) => {
                 that.kss = canvas
                 that.scrollTop = document.documentElement.scrollTop
