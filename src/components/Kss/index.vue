@@ -24,7 +24,6 @@ export default {
   methods: {
     handleClick() {
       this.$message('haha')
-      console.log('click')
       /* eslint-disable */
       new Kss({
         key: 65,

@@ -1,7 +1,6 @@
 import Vue from 'vue'
 import { Message, Card, Row, Col, Menu, MenuItem, RadioGroup, RadioButton, DatePicker, Table, TableColumn, Pagination } from 'element-ui'
 
-Vue.use(Message)
 Vue.use(Card)
 Vue.use(Row)
 Vue.use(Col)
