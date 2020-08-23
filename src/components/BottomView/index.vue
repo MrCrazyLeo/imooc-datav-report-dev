@@ -171,7 +171,7 @@ export default {
                 show: true,
                 position: 'outer',
                 formatter: function (params) {
-                  return `${params.data.legendname} | ${params.data.percent}`
+                  return `${params.data.legendname} | ${params.data.percent}%`
                 },
               },
             },
@@ -204,8 +204,8 @@ export default {
         tooltip: {
           formatter: function (params) {
             const str =
-              params.seriesName +
-              '<br />' +
+              // params.seriesName +
+              // '<br />' +
               params.marker +
               params.data.name +
               '<br />' +
