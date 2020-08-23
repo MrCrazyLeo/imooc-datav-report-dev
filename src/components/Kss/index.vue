@@ -43,6 +43,7 @@ export default {
 
 <style lang='scss' scoped>
 .kss-btn {
+  margin-top: 20px;
   border-radius: 5px;
   border: 1px solid lightblue;
   height: 40px;

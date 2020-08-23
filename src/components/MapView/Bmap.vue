@@ -1,11 +1,27 @@
 <template>
-  <ve-bmap
-    :settings="chartSettings"
-    :title="title"
-    :series="chartSeries"
-    height="100%"
-    :tooltip="{}"
-  ></ve-bmap>
+  <div class="map-view">
+    <div class="left-box">
+      <ve-bmap
+        :settings="chartSettings"
+        :title="title"
+        :series="chartSeries"
+        height="100%"
+        :tooltip="{}"
+      ></ve-bmap>
+    </div>
+    <div class="right-box">
+      <el-card class="tb">
+        <template v-slot:header>
+          <div class="title-wrapper">用户月同比增长</div>
+        </template>
+      </el-card>
+      <el-card class="water-ball">
+        <template v-slot:header>
+          <div class="title-wrapper">水球图</div>
+        </template>
+      </el-card>
+    </div>
+  </div>
 </template>
 
 <script>
@@ -602,7 +618,36 @@ export default {
 </script>
 
 <style lang='scss' scoped>
-.ve-bmap {
-  height: 800px;
+.map-view {
+  margin-top: 20px;
+  height: 600px;
+  display: flex;
+}
+.left-box {
+  flex: 0 0 80%;
+  width: 80%;
+}
+.right-box {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  margin-left: 20px;
+  justify-content: space-between;
+  .title-wrapper {
+    display: flex;
+    align-items: center;
+    height: 60px;
+    box-sizing: border-box;
+    border-bottom: 1px solid #eee;
+    font-size: 14px;
+    font-weight: 500;
+    padding: 0 0 0 20px;
+  }
+  .el-card {
+    flex: 1;
+    &:first-child {
+      margin-bottom: 20px;
+    }
+  }
 }
 </style>
