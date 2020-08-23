@@ -548,7 +548,7 @@ export default {
             return val[2] / 10
           },
           itemStyle: {
-            color: 'purple',
+            color: 'mediumorchid',
           },
           label: {
             show: false,
@@ -576,7 +576,7 @@ export default {
             return val[2] / 10
           },
           itemStyle: {
-            color: 'mediumorchid',
+            color: 'purple',
             shadowBlur: 10,
             shadowColor: '#666',
           },
@@ -591,6 +591,7 @@ export default {
           rippleEffect: {
             brushType: 'stroke',
           },
+          zlevel: 1,
         },
       ],
     }
