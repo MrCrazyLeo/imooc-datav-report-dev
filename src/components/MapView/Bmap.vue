@@ -19,12 +19,15 @@
         <template v-slot:header>
           <div class="title-wrapper">水球图</div>
         </template>
+        <liquid-fill />
       </el-card>
     </div>
   </div>
 </template>
 
 <script>
+import LiquidFill from './LiquidFill'
+
 const data = [
   { name: '海门', value: 9 },
   { name: '鄂尔多斯', value: 12 },
@@ -425,6 +428,7 @@ const convertData = function (data) {
 
 export default {
   name: 'Bmap',
+  components: { LiquidFill },
   data() {
     return {
       options: {},
