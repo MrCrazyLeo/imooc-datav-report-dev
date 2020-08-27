@@ -2,6 +2,7 @@
   <ve-liquidfill
     :data="chartData"
     :settings="chartSettings"
+    height="100%"
   ></ve-liquidfill>
 </template>
 
@@ -12,18 +13,18 @@ export default {
     this.chartSettings = {
       wave: [0.5, 0.3, 0.1],
       seriesMap: {
-        上海: {
+        支付转化率: {
           color: ['red', 'green', 'yellow'],
         },
       },
     }
     return {
       chartData: {
-        columns: ['city', 'percent'],
+        columns: ['title', 'percent'],
         rows: [
           {
-            city: '上海',
-            percent: 0.7,
+            title: '支付转化率',
+            percent: 0.8,
           },
         ],
       },

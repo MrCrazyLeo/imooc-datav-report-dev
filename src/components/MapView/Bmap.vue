@@ -19,7 +19,11 @@
         <template v-slot:header>
           <div class="title-wrapper">水球图</div>
         </template>
-        <liquid-fill />
+        <template>
+          <div class="liquid-fill-wrapper">
+            <liquid-fill />
+          </div>
+        </template>
       </el-card>
     </div>
   </div>
@@ -652,6 +656,9 @@ export default {
     &:first-child {
       margin-bottom: 20px;
     }
+  }
+  .liquid-fill-wrapper {
+    height: 210px;
   }
 }
 </style>
