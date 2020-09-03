@@ -7,6 +7,7 @@ import './plugins/vcharts.js'
 import Echarts from 'echarts'
 import VueEcharts from 'vue-echarts'
 import '@/style/index.css'
+import '@/icons/index.js'
 
 Vue.config.productionTip = false
 

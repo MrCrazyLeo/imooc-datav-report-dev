@@ -1,5 +1,8 @@
 <template>
-  <div class="bottom-view">
+  <div
+    class="bottom-view"
+    id="bottom-view"
+  >
     <div class="view">
       <el-card shadow="hover">
         <template v-slot:header>

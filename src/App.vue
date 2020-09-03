@@ -1,13 +1,17 @@
 <template>
   <div id="app">
     <router-view />
+    <img
+      src=""
+      id="img-wrapper2"
+    />
   </div>
 </template>
 
 <script>
 export default {
   name: 'app',
-  components: {}
+  components: {},
 }
 </script>
 

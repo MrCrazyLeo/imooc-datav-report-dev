@@ -1,5 +1,8 @@
 const path = require('path')
-// const webpack = require('webpack')
+// // const webpack = require('webpack')
+// function resolve(dir) {
+//   return path.join(__dirname, dir)
+// }
 
 module.exports = {
   entry: './src/main.js', // 项目的入口文件，webpack会从main.js开始，把所有依赖的js都加载打包
@@ -12,10 +15,5 @@ module.exports = {
     historyApiFallback: true, // historyApiFallback设置为true那么所有的路径都执行index.html。
     overlay: true, // 将错误显示在html之上
     disableHostCheck: true // webpack4.0 开启热更新
-  },
-  resolve: {
-    alias: {
-      '@': path.resolve('src')
-    }
   }
 }
