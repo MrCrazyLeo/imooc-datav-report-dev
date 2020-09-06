@@ -22,3 +22,7 @@ yarn lint
 
 ### Customize configuration
 See [Configuration Reference](https://cli.vuejs.org/config/).
+
+以下是目前开发的结果：
+
+![demo](media/demo.gif)
