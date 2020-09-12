@@ -13,6 +13,7 @@
       />
     </div>
     <div>可以看到dom-to-image也是不能对svg图标做处理</div>
+    <el-button @click="$router.push({ name: 'D3' })">跳转到d3页面</el-button>
   </div>
 </template>
 

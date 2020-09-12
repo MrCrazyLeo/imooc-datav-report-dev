@@ -1,5 +1,5 @@
 import Vue from 'vue'
-import { Message, Card, Row, Col, Menu, MenuItem, RadioGroup, RadioButton, DatePicker, Table, TableColumn, Pagination } from 'element-ui'
+import { Message, Card, Row, Col, Menu, MenuItem, RadioGroup, RadioButton, DatePicker, Table, TableColumn, Pagination, Button } from 'element-ui'
 
 Vue.use(Card)
 Vue.use(Row)
@@ -12,5 +12,6 @@ Vue.use(DatePicker)
 Vue.use(Table)
 Vue.use(TableColumn)
 Vue.use(Pagination)
+Vue.use(Button)
 
 Vue.prototype.$message = Message;
